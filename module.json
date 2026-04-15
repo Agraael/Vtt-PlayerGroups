@@ -1,7 +1,7 @@
 {
     "id": "player-groups",
     "title": "Player Groups",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Group players to set ownership on many users at once.",
     "authors": [
         {

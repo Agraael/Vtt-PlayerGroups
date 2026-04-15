@@ -23,7 +23,7 @@
                     <div class="pg-member-grid">
                         {{#each ../users as |u|}}
                         <label class="pg-member">
-                            <input type="checkbox" data-user-id="{{u.id}}" {{#if (lookup ../g.memberSet u.id)}}checked{{/if}}>
+                            <input type="checkbox" data-user-id="{{u.id}}" {{#if (lookup g.memberSet u.id)}}checked{{/if}}>
                             {{u.name}}
                         </label>
                         {{/each}}
