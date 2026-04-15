@@ -1,0 +1,18 @@
+{
+  "PLAYERGROUPS.SettingMenuName": "Player Groups",
+  "PLAYERGROUPS.SettingMenuLabel": "Manage Groups",
+  "PLAYERGROUPS.SettingMenuHint": "Create and edit groups of players for bulk permission management.",
+  "PLAYERGROUPS.ManagerTitle": "Player Groups",
+  "PLAYERGROUPS.NewGroup": "New Group",
+  "PLAYERGROUPS.GroupName": "Group name",
+  "PLAYERGROUPS.Members": "Members",
+  "PLAYERGROUPS.Delete": "Delete",
+  "PLAYERGROUPS.Save": "Save Changes",
+  "PLAYERGROUPS.NoGroups": "No groups defined yet. Click \"New Group\" to create one.",
+  "PLAYERGROUPS.GroupRowLabel": "Group: {name}",
+  "PLAYERGROUPS.Mixed": "— mixed —",
+  "PLAYERGROUPS.EmptyTooltip": "This group has no members.",
+  "PLAYERGROUPS.UntitledGroup": "Untitled Group",
+  "PLAYERGROUPS.ConfirmDeleteTitle": "Delete Group",
+  "PLAYERGROUPS.ConfirmDelete": "Delete group \"{name}\"?"
+}

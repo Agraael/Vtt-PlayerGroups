@@ -1,0 +1,42 @@
+<form autocomplete="off">
+    <p class="notes">{{localize "PLAYERGROUPS.SettingMenuHint"}}</p>
+
+    <div class="pg-toolbar">
+        <button type="button" class="pg-add">
+            <i class="fa-solid fa-plus"></i> {{localize "PLAYERGROUPS.NewGroup"}}
+        </button>
+    </div>
+
+    <div class="pg-groups">
+        {{#if groupList.length}}
+            {{#each groupList as |g|}}
+            <fieldset class="pg-group" data-group-id="{{g.id}}">
+                <legend>
+                    <input type="color" class="pg-color" value="{{g.color}}" data-tooltip="Color">
+                    <input type="text" class="pg-name" value="{{g.name}}" placeholder="{{localize 'PLAYERGROUPS.UntitledGroup'}}">
+                    <button type="button" class="pg-delete" data-tooltip="{{localize 'PLAYERGROUPS.Delete'}}">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </legend>
+                <div class="pg-members">
+                    <strong>{{localize "PLAYERGROUPS.Members"}}</strong>
+                    <div class="pg-member-grid">
+                        {{#each ../users as |u|}}
+                        <label class="pg-member">
+                            <input type="checkbox" data-user-id="{{u.id}}" {{#if (lookup ../g.memberSet u.id)}}checked{{/if}}>
+                            {{u.name}}
+                        </label>
+                        {{/each}}
+                    </div>
+                </div>
+            </fieldset>
+            {{/each}}
+        {{else}}
+            <p class="pg-empty">{{localize "PLAYERGROUPS.NoGroups"}}</p>
+        {{/if}}
+    </div>
+
+    <button type="submit">
+        <i class="far fa-save"></i> {{localize "PLAYERGROUPS.Save"}}
+    </button>
+</form>
