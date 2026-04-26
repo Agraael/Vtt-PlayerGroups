@@ -10,7 +10,14 @@ Hooks.once("init", () => {
     scope: "world",
     config: false,
     type: Object,
-    default: {}
+    default: {},
+    onChange: () => {
+      for ( const app of Object.values(ui.windows) ) {
+        if ( app?.constructor?.name?.endsWith("Directory") ) app.render(false);
+      }
+      ui.sidebar?.render(false);
+      for ( const tab of Object.values(ui.sidebar?.tabs ?? {}) ) tab?.render?.(false);
+    }
   });
 
   game.settings.registerMenu(MODULE_ID, "manager", {
