@@ -29,7 +29,7 @@ export function registerBadgeHooks() {
 
 function applyBadges(app, html) {
   if ( !game.user.isGM ) return;
-  const root = html[0] ?? html;
+  const root = html instanceof HTMLElement ? html : (html?.[0] ?? html);
   if ( !root?.querySelectorAll ) return;
 
   const collection = app.collection ?? app.documents ?? null;

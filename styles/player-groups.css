@@ -1,5 +1,6 @@
-/* Group rows injected into the Ownership Configuration dialog */
-#permission .pg-group-rows {
+/* Group rows injected into the Ownership Configuration dialog (v12 #permission, v13 .document-ownership) */
+#permission .pg-group-rows,
+.document-ownership .pg-group-rows {
     background: rgba(74, 144, 226, 0.08);
     border-top: 1px solid rgba(74, 144, 226, 0.3);
     border-bottom: 1px solid rgba(74, 144, 226, 0.3);
@@ -7,13 +8,15 @@
     margin: 4px 0;
 }
 
-#permission .pg-group-row {
+#permission .pg-group-row,
+.document-ownership .pg-group-row {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-#permission .pg-group-row label {
+#permission .pg-group-row label,
+.document-ownership .pg-group-row label {
     flex: 1;
     display: flex;
     align-items: center;
@@ -21,7 +24,8 @@
     font-weight: 600;
 }
 
-#permission .pg-color-dot {
+#permission .pg-color-dot,
+.document-ownership .pg-color-dot {
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -30,7 +34,8 @@
     flex: 0 0 auto;
 }
 
-#permission .pg-sep {
+#permission .pg-sep,
+.document-ownership .pg-sep {
     margin: 4px 0 0;
     border: none;
     border-top: 1px dashed rgba(74, 144, 226, 0.4);

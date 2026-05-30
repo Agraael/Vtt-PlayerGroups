@@ -1,7 +1,7 @@
 {
     "id": "player-groups",
-    "title": "Player Groups",
-    "version": "1.0.2",
+    "title": "Lasossis's Player Groups",
+    "version": "1.1.0",
     "description": "Group players to set ownership on many users at once.",
     "authors": [
         {
@@ -25,7 +25,7 @@
         }
     ],
     "compatibility": {
-        "minimum": "12",
-        "verified": "12"
+        "minimum": "13",
+        "verified": "13"
     }
 }
