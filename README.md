@@ -9,7 +9,9 @@ Check out my other modules and tools: [List of stuff](https://www.patreon.com/po
 
 ---
 
-Group players, then set ownership for the whole group at once from the standard Ownership Configuration dialog. Also adds a small shield icon on sidebar entries to show who owns a document.
+Group players to set ownership on many users at once.
+
+![Screenshot](Screenshot%202026-06-07%20095530.png)
 
 ---
 
@@ -24,7 +26,7 @@ https://github.com/Agraael/Vtt-PlayerGroups/releases/latest/download/module.json
 
 | Module | Description |
 |--------|-------------|
-| FoundryVTT v12 | The version I'm currently working on |
+| FoundryVTT v13 | The version I'm currently working on |
 
 ---
 
